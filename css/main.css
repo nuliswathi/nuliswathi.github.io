@@ -1374,7 +1374,7 @@ textarea.form-control, textarea.form-control:focus {
   list-style: none;
 }
 
-.knowledges li {;
+.knowledges li {
   display: inline-block;
   background-color: #f58545;
   border-radius: 3px;
