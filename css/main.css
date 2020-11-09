@@ -1346,9 +1346,7 @@ textarea.form-control, textarea.form-control:focus {
 .skills-second-style .skill-container.skill-9 .skill-percentage {
   width: 80%;
 }
-.skills-second-style .skill-container.skill-10 .skill-percentage {
-  width: 80%;
-}
+
 /* --- End of Skills Values --- */
 
 /* Animate skills on subpage load */
@@ -1376,7 +1374,7 @@ textarea.form-control, textarea.form-control:focus {
   list-style: none;
 }
 
-.knowledges li {
+.knowledges li {;
   display: inline-block;
   background-color: #f58545;
   border-radius: 3px;
