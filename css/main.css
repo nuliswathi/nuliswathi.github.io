@@ -1553,7 +1553,6 @@ textarea.form-control, textarea.form-control:focus {
 
 .portfolio-item-img {
   position: relative;
-  height: 120px;
   overflow: hidden;
 }
 
@@ -2969,11 +2968,6 @@ blockquote {
 
 .fun-fact-block-text {
   display: block;
-}
-
-.ajax-page-load {
-  height: 100px;
-  width: 120px;
 }
 
 @media only screen and (max-width: 1024px) {
