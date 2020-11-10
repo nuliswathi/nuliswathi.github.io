@@ -1553,6 +1553,7 @@ textarea.form-control, textarea.form-control:focus {
 
 .portfolio-item-img {
   position: relative;
+  height: 120px;
   overflow: hidden;
 }
 
