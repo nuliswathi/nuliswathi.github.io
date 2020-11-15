@@ -131,15 +131,50 @@
                     <div class="row">
                       <div class=" col-xs-12 col-sm-12 ">
                         <div class="col-inner">
-                          <p>Nulla nulla nisl, sodales ac nulla ac, consequat vulputate purus. Curabitur tincidunt ipsum vel nibh rutrum accumsan. Nunc ullamcorper posuere leo, vitae aliquet risus pharetra in. Integer turpis eros, iaculis et mi non, pulvinar egestas leo. Etiam sagittis ex turpis, vitae cursus tortor interdum eu. Quisque ultrices nunc eget erat vestibulum euismod. Ut mauris nisi, facilisis at arcu nec, facilisis porttitor lorem.</p><p>Vivamus vitae neque molestie, porta libero sed, tincidunt leo. In nec posuere odio, id rhoncus lorem. Proin id erat ut dolor condimentum viverra. Praesent viverra sed dolor ac luctus. Praesent placerat id lorem quis lacinia.</p>
+                          <p>Ideally its' best to have a state management system to 
+                            share data b/w react components. On the other hand smaller
+                            applications can work by components passing data among
+                            themselves.
+                          </p><br>
+
+                          <p>
+                            In this blog I will explain three different ways to pass data b/w react components :
+                          </p><br>
                           
-                          <blockquote class="quote">Maecenas id finibus felis. Etiam vitae nibh et felis efficitur pellentesque. Mauris suscipit sapien nunc, a lacinia nibh feugiat ut. In hac habitasse platea dictumst.
-                            <footer class="quote-author">
-                              <span>Larry L. Johnson</span>
-                            </footer>
+                          <p>
+                            1) Passing data from parent to child component.
+                            2) Passing data from child to parent component.
+                            3) Passing data between sibling components.
+                          </p><br>
+
+                          <b>Passing data from parent to child components:</b><br><br>
+                          <p>
+                            We can pass data from parent to child components using props. 
+                            Props are short for properties. If we want to send multiple
+                            variables from parent to child we can pass multiple props.
+                          </p>
+
+                          <blockquote class="quote"><b>Example 3 :</b>
+                            <pre>
+                              <code>
+                                class Parent extends React.Component {
+                                  render() {
+                                      return (
+                                          <div>
+                                              <ChildComponent name = {"Bunny"} dob={"27-05-1995"} />
+                                          </div>
+                                      );    
+                                  }
+                                }
+                              </code>
+                            </pre>
                           </blockquote>
 
-                          <p>Etiam interdum vulputate risus, vitae elementum neque consectetur sed. Donec at risus dui. Ut in suscipit neque. Vestibulum sit amet lobortis magna, commodo venenatis ante. Cras molestie, ex a auctor lacinia, risus est aliquam risus, sit amet semper purus tortor id ante. Donec lacus ipsum, porttitor et libero a, fringilla auctor quam. Sed in nisl id libero tincidunt aliquet. Aenean dui ipsum, auctor ut leo ut, semper dignissim lacus. Suspendisse faucibus viverra consequat. Maecenas efficitur massa vel eros sagittis dapibus. Nam lobortis mi in turpis hendrerit eleifend. Nulla non massa felis.</p>
+                          <p>
+                            In the above example the parent component is sending two
+                            props to the child component. The below code snippet shows
+                            how to access this data in child component :
+                          </p>
 
                           <p>Donec sit amet dolor ante. Vivamus vel massa accumsan, faucibus quam quis, convallis velit. Aliquam erat volutpat. Integer imperdiet diam quis arcu venenatis, quis sagittis nibh rhoncus. Donec non nisi scelerisque, sodales metus quis, accumsan mauris. Curabitur volutpat risus rutrum erat condimentum tristique. Nullam at felis diam. Quisque dictum felis non ante pretium mollis. Aliquam turpis neque, varius nec diam a, aliquam pulvinar diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ipsum libero, aliquet sed bibendum faucibus, semper a dui.</p>
                         </div>
