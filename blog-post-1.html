@@ -251,24 +251,25 @@
                                }
                               </code>
                             </pre>
-                            <p>
-                              To find time complexity, let’s see how many calls this 
-                              algorithm will make for some value n, say 4
-                            </p><br>
-                            <img src="img/fibonacci.png" alt="fibonacci"><br>
-                            <p>
-                              if we see the number of calls is actually a binary tree with
-                              depth 4 and number of calls in each tree level is twice as
-                              the previous level.
-                            </p><br><br>
-                            <p>
-                              So for n, number of calls will be a binary search tree of
-                              depth n with each level having 2^i element, where i is the
-                              level in the tree. If we add all calls, the number of calls
-                              will be 2⁰ + 2¹ + 2² + 2³ + … + 2^n which is of O(2^n).
-                            </p>
                           </blockquote>
-                                                    
+                          
+                          <p>
+                            To find time complexity, let’s see how many calls this 
+                            algorithm will make for some value n, say 4
+                          </p><br>
+                          <img src="img/fibonacci.png" alt="fibonacci"><br>
+                          <p>
+                            If we see the number of calls is actually a binary tree with
+                            depth 4 and number of calls in each tree level is twice as
+                            the previous level.
+                          </p><br><br>
+                          <p>
+                            So for n, number of calls will be a binary search tree of
+                            depth n with each level having 2^i element, where i is the
+                            level in the tree. If we add all calls, the number of calls will
+                             be 2⁰ + 2¹ + 2² + 2³ + … + 2^n which is of O(2^n).
+                          </p>
+
                         </div>
                       </div>
                     </div>
