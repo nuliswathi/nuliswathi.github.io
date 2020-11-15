@@ -187,7 +187,28 @@
                             constants in run time, so the time complexity for the above 
                             function will still be O(N).
                           </p>
-                          
+
+                          <b>Multiply the runtimes :</b><br>
+                          <blockquote class="quote"><b>Example 3 :</b>
+                            <pre>
+                              <code>
+                                public void nestedForLoop(int[] arr) {
+                                  for(int i = 0; i < arr.length; i++) {
+                                    for(int j = 0; j < arr.length; j++) {
+                                          sout(arr[i] + arr[j]);
+                                    }
+                                  }
+                                }
+                              }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <p>In the above example for each iteration in the outer for loop, 
+                            we iterate through the entire array in the inner for loop. So the 
+                            time complexity for the above function is O(N * N) = O(N^2). For the 
+                            above N = 3(sizeof the array), so the time complexity of O(3^2) = O(9).
+                          </p>
                         </div>
                       </div>
                     </div>
