@@ -135,7 +135,7 @@
                             It is calculated by taking into account all the operations that the algorithm runs.
                             It is important to know how to calculate time comp for programming interviews because most interviewers ask you to provide time and space complexity for algorithms.  
                           </p>
-                          <a href="blog-post-2.html">Check out my blog for How to calculate space complexity here</a>
+                          <a href="blog-post-2.html">Check out my blog for How to calculate space complexity here</a><br>
                           <p>Big O notation is used to describe the time complexity of an algorithm. Let's pick a few examples to understand 
                             how to calculate time complexity.
                           </p>
@@ -159,7 +159,7 @@
                             complexity for the above function is O(N).
                           </p>
 
-                          <b>Drop the constants :</b>
+                          <b>Drop the constants :</b><br>
                           <p>While calculating time complexity we lose the constants.
                             Let's take a look at the below example to understand this better :
                           </p>
@@ -178,6 +178,15 @@
                               </code>
                             </pre>
                           </blockquote>
+
+                          <p>
+                            As u can see in the above function, we iterate through the 
+                            array two times. Each time we iterate through the array the
+                            time complexity is O(N), since we are iterating twice it is
+                            : O(N) + O(N) = O(2N). Here the constant is 2. We drop the 
+                            constants in run time, so the time complexity for the above 
+                            function will still be O(N).
+                          </p>
                           
                         </div>
                       </div>
