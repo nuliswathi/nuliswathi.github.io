@@ -132,15 +132,44 @@
                     <div class="row">
                       <div class=" col-xs-12 col-sm-12 ">
                         <div class="col-inner">
-                          <p>Nulla nulla nisl, sodales ac nulla ac, consequat vulputate purus. Curabitur tincidunt ipsum vel nibh rutrum accumsan. Nunc ullamcorper posuere leo, vitae aliquet risus pharetra in. Integer turpis eros, iaculis et mi non, pulvinar egestas leo. Etiam sagittis ex turpis, vitae cursus tortor interdum eu. Quisque ultrices nunc eget erat vestibulum euismod. Ut mauris nisi, facilisis at arcu nec, facilisis porttitor lorem.</p><p>Vivamus vitae neque molestie, porta libero sed, tincidunt leo. In nec posuere odio, id rhoncus lorem. Proin id erat ut dolor condimentum viverra. Praesent viverra sed dolor ac luctus. Praesent placerat id lorem quis lacinia.</p>
-                          
-                          <blockquote class="quote">Maecenas id finibus felis. Etiam vitae nibh et felis efficitur pellentesque. Mauris suscipit sapien nunc, a lacinia nibh feugiat ut. In hac habitasse platea dictumst.
-                            <footer class="quote-author">
-                              <span>Larry L. Johnson</span>
-                            </footer>
+                          <p>
+                            Space complexity is the measure of total amount of memory that an algorithm creates/needs. 
+                          </p>
+                          <p>
+                            It is important to know how to calculate space complexity for
+                            programming interviews because most interviewers ask you to provide
+                            time and space complexity for your algorithms.
+                          </p><br>
+
+                          <a href="blog-post-1.html">Check out my blog for How to calculate time complexity here.</a>
+                          <p>
+                            Big O notation is used to describe the space complexity of an algorithm.
+                            Let's pick a few examples to understand how to calculate space complexity.
+                          </p><br>
+
+                          <b>Constants Space Complexity : </b><br><br>
+                          <p>
+                            If the space complexity taken by an algorithm is always constant
+                            irrespective of the input then the space complexity is O(1).
+                          </p>
+                          <blockquote class="quote"><b>Example 1 :</b>
+                            <pre>
+                              <code>
+                                public int sum(int num1, int num2) {
+                                  int result = num1 + num2;
+                                  return result;
+                               }
+                              </code>
+                            </pre>
                           </blockquote>
 
-                          <p>Etiam interdum vulputate risus, vitae elementum neque consectetur sed. Donec at risus dui. Ut in suscipit neque. Vestibulum sit amet lobortis magna, commodo venenatis ante. Cras molestie, ex a auctor lacinia, risus est aliquam risus, sit amet semper purus tortor id ante. Donec lacus ipsum, porttitor et libero a, fringilla auctor quam. Sed in nisl id libero tincidunt aliquet. Aenean dui ipsum, auctor ut leo ut, semper dignissim lacus. Suspendisse faucibus viverra consequat. Maecenas efficitur massa vel eros sagittis dapibus. Nam lobortis mi in turpis hendrerit eleifend. Nulla non massa felis.</p>
+                          <p>
+                            In the above example you can see that the function creates 
+                            3 variables which are : input variables  a, b and the value
+                            returned. Since the function always has 3 variables irrespective
+                            of the input values the space complexity for the above function
+                            is O(1).
+                          </p><br>
 
                           <p>Donec sit amet dolor ante. Vivamus vel massa accumsan, faucibus quam quis, convallis velit. Aliquam erat volutpat. Integer imperdiet diam quis arcu venenatis, quis sagittis nibh rhoncus. Donec non nisi scelerisque, sodales metus quis, accumsan mauris. Curabitur volutpat risus rutrum erat condimentum tristique. Nullam at felis diam. Quisque dictum felis non ante pretium mollis. Aliquam turpis neque, varius nec diam a, aliquam pulvinar diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ipsum libero, aliquet sed bibendum faucibus, semper a dui.</p>
                         </div>
