@@ -150,9 +150,6 @@
                               }
                               </code>
                             </pre>
-                            <!--<footer class="quote-author">
-                              <span>Larry L. Johnson</span>
-                            </footer>-->
                           </blockquote>
 
                           <p>The function in the above example prints all the elements
@@ -162,7 +159,26 @@
                             complexity for the above function is O(N).
                           </p>
 
-                          <p>Donec sit amet dolor ante. Vivamus vel massa accumsan, faucibus quam quis, convallis velit. Aliquam erat volutpat. Integer imperdiet diam quis arcu venenatis, quis sagittis nibh rhoncus. Donec non nisi scelerisque, sodales metus quis, accumsan mauris. Curabitur volutpat risus rutrum erat condimentum tristique. Nullam at felis diam. Quisque dictum felis non ante pretium mollis. Aliquam turpis neque, varius nec diam a, aliquam pulvinar diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ipsum libero, aliquet sed bibendum faucibus, semper a dui.</p>
+                          <b>Drop the constants :</b>
+                          <p>While calculating time complexity we lose the constants.
+                            Let's take a look at the below example to understand this better :
+                          </p>
+
+                          <blockquote class="quote"><b>Example 2 :</b>
+                            <pre>
+                              <code>
+                                public void printArrayTwice(int[] arr) {
+                                  for(int i = 0; i < arr.length; i++) {
+                                      sout(arr[i]);
+                                  }
+                                  for(int j = 0; j < arr.length; j++) {
+                                    sout(arr[j]);
+                                }
+                              }
+                              </code>
+                            </pre>
+                          </blockquote>
+                          
                         </div>
                       </div>
                     </div>
