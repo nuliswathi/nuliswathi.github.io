@@ -188,7 +188,7 @@
                             function will still be O(N).
                           </p>
 
-                          <b>Multiply the runtimes :</b><br>
+                          <b>Multiply the runtimes :</b><br><br>
                           <blockquote class="quote"><b>Example 3 :</b>
                             <pre>
                               <code>
@@ -218,6 +218,57 @@
                             <p>O(N + logN) = O(N) Here we dropped O(logN) which is the non-dominant term.</p>
                           </blockquote>
 
+                          <b>Logarithmic Runtime :</b><br><br>
+                          <p>The most common logarithmic runtime we come across is O(logN).
+                            If an algorithm works in such a way that the number of elements
+                            it needs to process or work through gets halved every time,
+                            then the time complexity for such an algorithm is O(logN).
+                          </p><br>
+                          <p>
+                            The time complexity for finding an element in a balanced BST is O(logN),
+                            since we reduce the number of elements we need to look up everytime by half.
+                          </p><br><br>
+
+                          <b>Recursive Runtime :</b><br><br>
+                          <p>
+                            I was very confused about calculating time complexity
+                            for recursive algorithms when I started problem solving. 
+                            Hopefully the below example helps you understand this.
+                          </p><br>
+
+                          <blockquote class="quote"><b>Example 5 :</b>
+                            <p>
+                              In a nutshell the time complexity for a recursive 
+                              algorithm will often look like O(branches ^ depth).
+                            </p>
+                            <pre>
+                              <code>
+                                int f (int n) {
+                                  if ( n ≤ 1) {
+                                     return 1;
+                                  }
+                                 return f(n-1) + f(n-1)
+                               }
+                              </code>
+                            </pre>
+                            <p>
+                              To find time complexity, let’s see how many calls this 
+                              algorithm will make for some value n, say 4
+                            </p><br>
+                            <img src="img/fibonacci.png" alt="fibonacci"><br>
+                            <p>
+                              if we see the number of calls is actually a binary tree with
+                              depth 4 and number of calls in each tree level is twice as
+                              the previous level.
+                            </p><br><br>
+                            <p>
+                              So for n, number of calls will be a binary search tree of
+                              depth n with each level having 2^i element, where i is the
+                              level in the tree. If we add all calls, the number of calls
+                              will be 2⁰ + 2¹ + 2² + 2³ + … + 2^n which is of O(2^n).
+                            </p>
+                          </blockquote>
+                                                    
                         </div>
                       </div>
                     </div>
