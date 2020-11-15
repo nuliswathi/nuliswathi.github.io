@@ -132,7 +132,7 @@
                       <div class=" col-xs-12 col-sm-12 ">
                         <div class="col-inner">
                           <p>Ideally its' best to have a state management system to 
-                            share data b/w react components. On the other hand smaller
+                            share data between react components. On the other hand smaller
                             applications can work by components passing data among
                             themselves.
                           </p><br>
@@ -154,7 +154,7 @@
                             variables from parent to child we can pass multiple props.
                           </p>
 
-                          <blockquote class="quote"><b>Example 3 :</b>
+                          <blockquote class="quote">
                             <pre>
                               <code>
                                 class Parent extends React.Component {
@@ -176,7 +176,132 @@
                             how to access this data in child component :
                           </p>
 
-                          <p>Donec sit amet dolor ante. Vivamus vel massa accumsan, faucibus quam quis, convallis velit. Aliquam erat volutpat. Integer imperdiet diam quis arcu venenatis, quis sagittis nibh rhoncus. Donec non nisi scelerisque, sodales metus quis, accumsan mauris. Curabitur volutpat risus rutrum erat condimentum tristique. Nullam at felis diam. Quisque dictum felis non ante pretium mollis. Aliquam turpis neque, varius nec diam a, aliquam pulvinar diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ipsum libero, aliquet sed bibendum faucibus, semper a dui.</p>
+                          <blockquote class="quote">
+                            <pre>
+                              <code>
+                                class Child extends React.Component {
+                                  render() {
+                                      return (
+                                          &lt;div&gt;
+                                          &lt;p&gt;Username is {this.props.name}&lt;/p&gt;
+                                          &lt;p&gt;The user date of birth is {this.props.dob}&lt;/p&gt;
+                                          &lt;/div&gt;
+                                      );    
+                                  }
+                                }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <b>Passing data from child to parent component :</b><br><br>
+                          <p>
+                            If we want to send data from child to parent component then we send a callback function as a prop to the child component. The child component uses the callback function to send data
+                            back to the parent component. The below code example shows this :
+                          </p>
+
+                          <blockquote class="quote">
+                            <pre>
+                              <code>
+                                class Parent extends React.Component {
+                                  state = {name: ""};
+                                  callBackFunction = (dataFromChild) => {
+                                    this.setState({name: dataFromChild});		
+                                  }
+                                  render() {
+                                      return (
+                                          &lt;div&gt;
+                                            &lt;div&gt;
+                                              {this.state.name}
+                                            &lt;/div&gt;
+                                          &lt;/div&gt;
+                                      );    
+                                  }
+                                }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <blockquote class="quote">
+                            <pre>
+                              <code>
+                                class Children extends React.Component {
+                                  sendData = () => {
+                                    this.props.parentCallBack("Bunny");			
+                                  }
+                                  render() {
+                                      return (
+                                          &lt;div&gt;
+                                            Child Component
+                                          &lt;/div&gt;
+                                      );    
+                                  }
+                                }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <p>
+                            In the above code snippet you can see that the child
+                            component uses the callback function passed as prop to
+                            send data to the parent. The child component calls this
+                            callback function and sends data. You can save the data
+                            passed from the child component in state to the parent
+                            component if necessary.
+                          </p><br>
+
+                          <p>Between Sibling React components:</p><br><br>
+                          <p>
+                            To pass data between sibling components, the data needs
+                            to be sent to the parent component and then passed to the
+                            sibling component. Below code example show how to do this:
+                          </p>
+                          <blockquote class="quote">
+                            <pre>
+                              <code>
+                                class Pareent extends React.Component {
+                                  state ={name: ""};
+                                  callBackFuntion = (dataFromOneOfTheSiblingComponent) => {
+                                    this.setState({name: dataFromOneOfTheSiblingComponent});
+                                  }
+                                  render() {
+                                      return (
+                                          &lt;div&gt;
+                                            
+                                          &lt;/div&gt;
+                                      );    
+                                  }
+                                }
+                                class SiblingComponent1 extends React.Component {
+                                  sendData = () => {
+                                    this.props.parentCallBack("Bunny");			
+                                  }
+                                  render() {
+                                    return(
+                                      &lt;div&gt;
+                                        Child Component      
+                                      &lt;/div&gt;
+                                    );
+                                  }
+                                }
+                                class SiblingComponent2 extends React.Component {
+                                  render() {
+                                    return(
+                                      &lt;div&gt;
+                                        {this.props.name}    
+                                      &lt;/div&gt;
+                                    );
+                                  }
+                                }
+                              </code>
+                            </pre>
+                          </blockquote>
+                          <p>
+                            In the above example SiblingComponent1 sends data 
+                            to the Parent react component. The Parent component
+                            sends that data to SiblingComponent2 as props. This
+                            is the way sibling components send data to each other.
+                          </p>
+                          
                         </div>
                       </div>
                     </div>
