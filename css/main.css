@@ -1529,6 +1529,7 @@ textarea.form-control, textarea.form-control:focus {
   position: relative;
   display: block;
   width: 100%;
+  height: 170px;
 }
 
 .portfolio-grid figure a,
@@ -1561,7 +1562,6 @@ textarea.form-control, textarea.form-control:focus {
 .portfolio-item-img {
   position: relative;
   overflow: hidden;
-  height: 170px;
 }
 
 .portfolio-grid figure .portfolio-item-img:after {
