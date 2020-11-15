@@ -141,7 +141,7 @@
                             time and space complexity for your algorithms.
                           </p><br>
 
-                          <a href="blog-post-1.html">Check out my blog for How to calculate time complexity here.</a>
+                          <a href="blog-post-1.html">Check out my blog for How to calculate time complexity here.</a><br>
                           <p>
                             Big O notation is used to describe the space complexity of an algorithm.
                             Let's pick a few examples to understand how to calculate space complexity.
@@ -170,8 +170,49 @@
                             of the input values the space complexity for the above function
                             is O(1).
                           </p><br>
+                          
+                          <b>Nested ForLoop Example :</b><br><br>
+                          <blockquote class="quote"><b>Example 2 :</b>
+                            <pre>
+                              <code>
+                                public void nestedForLoop(int[] arr) {
+                                  for(int i = 0; i < arr.length; i++) {
+                                    for(int j = 0;j < arr.length; j++) {
+                                      int result = arr[i] + arr[j];
+                                      sout(result);
+                                    }
+                                  }
+                                }
+                              </code>
+                            </pre>
+                          </blockquote>
 
-                          <p>Donec sit amet dolor ante. Vivamus vel massa accumsan, faucibus quam quis, convallis velit. Aliquam erat volutpat. Integer imperdiet diam quis arcu venenatis, quis sagittis nibh rhoncus. Donec non nisi scelerisque, sodales metus quis, accumsan mauris. Curabitur volutpat risus rutrum erat condimentum tristique. Nullam at felis diam. Quisque dictum felis non ante pretium mollis. Aliquam turpis neque, varius nec diam a, aliquam pulvinar diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ipsum libero, aliquet sed bibendum faucibus, semper a dui.</p>
+                          <p>
+                            In the above example even though we have a nested for loop
+                            the function only creates one variable(result) at any point
+                            of time.Since this is always constant irrespective of the
+                            input array the space complexity is O(1).
+                          </p><br>
+
+                          <b>Calculating Space Complexity for recursive algorithms :</b><br><br>
+                          <p>
+                            Below is an example for printing fibonacci series.  
+                          </p>
+
+                          <blockquote class="quote"><b>Example 2 :</b>
+                            <pre>
+                              <code>
+                                public int fibonacci(int n) {
+                                  System.out.println("Calling fibonacci with input: " + n);
+                                  if (n < 2) {
+                                    return n;
+                                  }
+                                  return fibo(n - 1) + fibo(n - 2);
+                                }
+                              </code>
+                            </pre>
+                          </blockquote>
+
                         </div>
                       </div>
                     </div>
