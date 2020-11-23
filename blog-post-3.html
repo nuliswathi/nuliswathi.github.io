@@ -252,15 +252,16 @@
                           <blockquote class="quote">
                             <pre>
                               <code>
-                                class Pareent extends React.Component {
-                                  state ={name: ""};
+                                class Parent extends React.Component {
+                                  state = {name: ""};
                                   callBackFuntion = (dataFromOneOfTheSiblingComponent) => {
                                     this.setState({name: dataFromOneOfTheSiblingComponent});
                                   }
                                   render() {
                                       return (
                                           &lt;div&gt;
-                                            
+                                          &lt;ChildComponent parentCallBack = {this.callBackFuntion} /&gt;
+                                          &lt;div&gt;{this.state.name}&lt;/div&gt;
                                           &lt;/div&gt;
                                       );    
                                   }
@@ -272,6 +273,7 @@
                                   }
                                   render() {
                                     return(
+                                      &lt;button onClick={sendData}>Click &lt;/button&gt;
                                       &lt;div&gt;
                                         Child Component      
                                       &lt;/div&gt;
