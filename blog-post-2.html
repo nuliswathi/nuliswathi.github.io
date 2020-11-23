@@ -165,7 +165,7 @@
 
                           <p>
                             In the above example you can see that the function creates 
-                            3 variables which are : input variables  a, b and the value
+                            3 variables which are : input variables  num1, num2 and the value
                             returned. Since the function always has 3 variables irrespective
                             of the input values the space complexity for the above function
                             is O(1).
@@ -196,23 +196,28 @@
 
                           <b>Calculating Space Complexity for recursive algorithms :</b><br><br>
                           <p>
-                            Below is an example for printing fibonacci series.  
+                            Computing space time complexity for recursive algorithms is tricky. We need to understand how the stack frames are generated in memory
+                            for our recursive algorithm.  
                           </p>
 
-                          <blockquote class="quote"><b>Example 2 :</b>
+                          <blockquote class="quote"><b>Example 3 :</b>
                             <pre>
                               <code>
-                                public int fibonacci(int n) {
-                                  System.out.println("Calling fibonacci with input: " + n);
-                                  if (n < 2) {
-                                    return n;
+                                public int sum(int n) {
+                                  if (n == 1) {
+                                    return 1;
                                   }
-                                  return fibo(n - 1) + fibo(n - 2);
+                                  return sum(n - 1);
                                 }
                               </code>
                             </pre>
                           </blockquote>
 
+                          <p>
+                            In recursive alogrithm the space complexity is the maximum depth of the callstack because at any point of the time.
+In the above example: if 5 is passed as input to the function then the call stack would look like this -> f(5)->f(4)->f(3)->f(2)->f(1)
+Here the space complexity is O(m) where m is 5, the maximum depth of the recursive alogrithm in the above example.
+                          </p>
                         </div>
                       </div>
                     </div>
