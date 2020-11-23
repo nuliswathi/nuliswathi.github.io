@@ -131,8 +131,8 @@
                     <div class="row">
                       <div class=" col-xs-12 col-sm-12 ">
                         <div class="col-inner">
-                          <p>Ideally its' best to have a state management system to 
-                            share data between react components. On the other hand smaller
+                          <p>Ideally it's best to have a state management system to 
+                            share data between react components in larger applications. On the other hand smaller
                             applications can work by components passing data among
                             themselves.
                           </p><br>
@@ -161,7 +161,7 @@
                                   render() {
                                       return (
                                           &lt;div&gt;
-                                          &lt;p&gt;fhfhfhfh&lt;/p&gt;
+                                          &lt;p&gt;<ChildComponent name = {"Bunny"} dob={"27-05-1995"} />&lt;/p&gt;
                                           &lt;/div&gt;
                                       );    
                                   }
@@ -294,7 +294,7 @@
                           <p>
                             In the above example SiblingComponent1 sends data 
                             to the Parent react component. The Parent component
-                            sends that data to SiblingComponent2 as props. This
+                            sends that data to sibling component as props. This
                             is the way sibling components send data to each other.
                           </p>
 
