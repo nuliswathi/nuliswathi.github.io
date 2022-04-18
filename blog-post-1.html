@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Nuli Swathi Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+    <!-- /Animated Background -->
+
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="page">
+      <div class="page-content">
+
+          <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content">
+              <div class="header-photo">
+                <img src="img/main_photo.jpg" alt="Alex Smith">
+              </div>
+              <div class="header-titles">
+                <h2>Nuli Swathi</h2>
+                <h4>Undergraduate / Full Stack Developer</h4>
+                <h4>Math & Science Tutor / Blogger</h4>
+              </div>
+            </div>
+
+            <ul class="main-menu">
+              <li class="active">
+                <a href="index.html#about-me" class="nav-anim">
+                  <span class="menu-icon lnr lnr-home"></span>
+                  <span class="link-text">About Me</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#resume" class="nav-anim">
+                  <span class="menu-icon lnr lnr-graduation-hat"></span>
+                  <span class="link-text">Resume</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#portfolio" class="nav-anim">
+                  <span class="menu-icon lnr lnr-briefcase"></span>
+                  <span class="link-text">Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#blog" class="nav-anim">
+                  <span class="menu-icon lnr lnr-book"></span>
+                  <span class="link-text">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#contact" class="nav-anim">
+                  <span class="menu-icon lnr lnr-envelope"></span>
+                  <span class="link-text">Contact</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="social-links">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/swathi-n-5b749b1ba" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="header-buttons">
+              <a href="Nuli Swathi.pdf" download="Nuli Swathi" target="_blank" class="btn btn-primary">Download CV</a>
+            </div>
+          
+          </header>
+
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <div class="content-area single-page-area">
+            <div class="single-page-content">
+
+              <article class="post">
+
+                <div class="post-thumbnail">
+                  <img src="img/blog image.jpg" alt="image">
+                </div>
+
+                <div class="post-content">
+                  <!-- /Entry header -->
+                  <header class="entry-header">
+                    <!-- Entry meta -->
+                    <!--<div class="entry-meta entry-meta-top">
+                      <span><a href="#" rel="category tag">UI</a></span>        
+                    </div>-->
+                    <!-- /Entry meta -->
+
+                    <h2 class="entry-title">How to calculate Time Complexity</h2>
+                  </header>
+                  <!-- /Entry header -->
+
+                  <!-- Entry content -->
+                  <div class="entry-content">
+                    <div class="row">
+                      <div class=" col-xs-12 col-sm-12 ">
+                        <div class="col-inner">
+                          <p>Time complexity of an algorithm is basically the time taken to run it.
+                            It is calculated by taking into account all the operations that the algorithm runs.
+                            It is important to know how to calculate time comp for programming interviews because most interviewers ask you to provide time and space complexity for algorithms.  
+                          </p>
+                          <a href="blog-post-2.html">Check out my blog for How to calculate space complexity here</a><br><br>
+                          <p>Big O notation is used to describe the time complexity of an algorithm. Let's pick a few examples to understand 
+                            how to calculate time complexity.
+                          </p>
+                          
+                          <blockquote class="quote"><b>Example 1 :</b>
+                            <pre>
+                              <code>
+                                public void printArray(int[] arr) {
+                                  for(int i = 0; i < arr.length; i++) {
+                                      sout(arr[i]);
+                                  }
+                              }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <p>The function in the above example prints all the elements
+                            in the array to the console. It is doing so by iterating through
+                            all the elements in the array. The for loop in the above function
+                            runs 'N' times, where 'N' is the size of the array. So the time
+                            complexity for the above function is O(N).
+                          </p>
+
+                          <b>Drop the constants :</b><br><br>
+                          <p>While calculating time complexity we lose the constants.
+                            Let's take a look at the below example to understand this better :
+                          </p>
+
+                          <blockquote class="quote"><b>Example 2 :</b>
+                            <pre>
+                              <code>
+                                public void printArrayTwice(int[] arr) {
+                                  for(int i = 0; i < arr.length; i++) {
+                                      sout(arr[i]);
+                                  }
+                                  for(int j = 0; j < arr.length; j++) {
+                                    sout(arr[j]);
+                                }
+                              }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <p>
+                            As you can see in the above function, we iterate through the 
+                            array two times. Each time we iterate through the array the
+                            time complexity is O(N), since we are iterating twice it is
+                            : O(N) + O(N) = O(2N). Here the constant is 2. We drop the 
+                            constants in run time, so the time complexity for the above 
+                            function will still be O(N).
+                          </p>
+
+                          <b>Multiply the runtimes :</b><br><br>
+                          <blockquote class="quote"><b>Example 3 :</b>
+                            <pre>
+                              <code>
+                                public void nestedForLoop(int[] arr) {
+                                  for(int i = 0; i < arr.length; i++) {
+                                    for(int j = 0; j < arr.length; j++) {
+                                          sout(arr[i] + arr[j]);
+                                    }
+                                  }
+                                }
+                              }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <p>In the above example for each iteration in the outer for loop, 
+                            we iterate through the entire array in the inner for loop. So the 
+                            time complexity for the above function is O(N * N) = O(N^2). For the 
+                            above N = 3(sizeof the array), so the time complexity of O(3^2) = O(9).
+                          </p>
+
+                          <b>Drop the Non-Dominant terms :</b><br><br>
+                          <p>You should drop the non-dominant terms while measuring time complexity.</p>
+
+                          <blockquote class="quote"><b>Example 4 :</b>
+                            <p>O(N^2 + N) = O(N^2) Here we dropped O(N) which is the non-dominant term.</p>
+                            <p>O(N + logN) = O(N) Here we dropped O(logN) which is the non-dominant term.</p>
+                          </blockquote>
+
+                          <b>Logarithmic Runtime :</b><br><br>
+                          <p>The most common logarithmic runtime we come across is O(logN).
+                            If an algorithm works in such a way that the number of elements
+                            it needs to process or work through gets halved every time,
+                            then the time complexity for such an algorithm is O(logN).
+                          </p><br>
+                          <p>
+                            The time complexity for finding an element in a balanced BST is O(logN),
+                            since we reduce the number of elements we need to look up everytime by half.
+                          </p><br><br>
+
+                          <b>Recursive Runtime :</b><br><br>
+                          <p>
+                            I was very confused about calculating time complexity
+                            for recursive algorithms when I started problem solving. 
+                            Hopefully the below example helps you understand this.
+                          </p><br>
+
+                          <blockquote class="quote"><b>Example 5 :</b>
+                            <p>
+                              In a nutshell the time complexity for a recursive 
+                              algorithm will often look like O(branches ^ depth).
+                            </p>
+                            <pre>
+                              <code>
+                                int f (int n) {
+                                  if ( n ≤ 1) {
+                                     return 1;
+                                  }
+                                 return f(n-1) + f(n-1)
+                               }
+                              </code>
+                            </pre>
+                          </blockquote>
+                          
+                          <p>
+                            To find time complexity, let’s see how many calls this 
+                            algorithm will make for some value n, say 4
+                          </p><br>
+                          <img src="img/fibonacci.png" alt="fibonacci"><br>
+                          <p>
+                            If we see the number of calls is actually a binary tree with
+                            depth 4 and number of calls in each tree level is twice as
+                            the previous level.
+                          </p><br><br>
+                          <p>
+                            So for n, the number of calls will be a binary search tree of
+                            depth n with each level having 2^i elements, where i is the
+                            level in the tree. If we add all calls, the number of calls will
+                             be 2⁰ + 2¹ + 2² + 2³ + … + 2^n which is equal to O(2^n).
+                          </p>
+                          <p>
+                            So the time complexity is o(2^n).
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Entry content -->
+    
+                  <div class="entry-meta entry-meta-bottom">
+                    <div class="date-author">
+                      <span class="entry-date">
+                        <a href="#" rel="bookmark">
+                          <i class="far fa-clock"></i> <span class="entry-date"> September 12, 2020</span>
+                        </a>
+                      </span>
+                      <span class="author vcard">
+                        <a class="url fn n" href="#" rel="author"> <i class="fas fa-user"></i> LMPixels</a>
+                      </span>
+                    </div>
+      
+                    <!-- Share Buttons -->
+                    <div class="entry-share btn-group share-buttons">
+                      <!--<a href="#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="btn" target="_blank" title="Share on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      
+                      <a href="#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="btn" target="_blank" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                      </a>-->
+
+                      <a href="https://www.linkedin.com/in/swathi-n-5b749b1ba" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                    <!-- /Share Buttons -->
+                  </div>
+
+                  <!--<div class="post-tags">
+                    <div class="tags">
+                      <a href="#" rel="tag">animate</a>
+                      <a href="#" rel="tag">bar</a>
+                      <a href="#" rel="tag">design</a>
+                      <a href="#" rel="tag">progress</a>
+                      <a href="#" rel="tag">ui</a>
+                    </div>
+                  </div>-->
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/animating.js"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script src='js/perfect-scrollbar.min.js'></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

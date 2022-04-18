@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Nuli Swathi Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+    <!-- /Animated Background -->
+
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="page">
+      <div class="page-content">
+
+          <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content">
+              <div class="header-photo">
+                <img src="img/main_photo.jpg" alt="Nuli Swathi">
+              </div>
+              <div class="header-titles">
+                <h2>Nuli Swathi</h2>
+                <h4>Undergraduate / Full Stack Developer</h4>
+                <h4>Math & Science Tutor / Blogger</h4>
+              </div>
+            </div>
+
+            <ul class="main-menu">
+              <li class="active">
+                <a href="index.html#about-me" class="nav-anim">
+                  <span class="menu-icon lnr lnr-home"></span>
+                  <span class="link-text">About Me</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#resume" class="nav-anim">
+                  <span class="menu-icon lnr lnr-graduation-hat"></span>
+                  <span class="link-text">Resume</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#portfolio" class="nav-anim">
+                  <span class="menu-icon lnr lnr-briefcase"></span>
+                  <span class="link-text">Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#blog" class="nav-anim">
+                  <span class="menu-icon lnr lnr-book"></span>
+                  <span class="link-text">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#contact" class="nav-anim">
+                  <span class="menu-icon lnr lnr-envelope"></span>
+                  <span class="link-text">Contact</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="social-links">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/swathi-n-5b749b1ba" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                
+              </ul>
+            </div>
+
+            <div class="header-buttons">
+              <a href="Nuli Swathi.pdf" download="Nuli Swathi" target="_blank" class="btn btn-primary">Download CV</a>
+            </div>
+          
+          </header>
+
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <div class="content-area single-page-area">
+            <div class="single-page-content">
+
+              <article class="post">
+
+                <div class="post-thumbnail">
+                  <img src="img/blog image.jpg" alt="image">
+                </div>
+
+                <div class="post-content">
+                  <!-- /Entry header -->
+                  <header class="entry-header">
+                    <!-- Entry meta -->
+                    <!--<div class="entry-meta entry-meta-top">
+                      <span><a href="#" rel="category tag">UI</a></span>        
+                    </div>-->
+                    <!-- /Entry meta -->
+
+                    <h2 class="entry-title">How to calculate Space Complexity</h2>
+                  </header>
+                  <!-- /Entry header -->
+
+                  <!-- Entry content -->
+                  <div class="entry-content">
+                    <div class="row">
+                      <div class=" col-xs-12 col-sm-12 ">
+                        <div class="col-inner">
+                          <p>
+                            Space complexity is the measure of total amount of memory that an algorithm creates/needs. 
+                          </p>
+                          <p>
+                            It is important to know how to calculate space complexity for
+                            programming interviews because most interviewers ask you to provide
+                            time and space complexity for your algorithms.
+                          </p><br>
+
+                          <a href="blog-post-1.html">Check out my blog for How to calculate time complexity here.</a><br>
+                          <p>
+                            Big O notation is used to describe the space complexity of an algorithm.
+                            Let's pick a few examples to understand how to calculate space complexity.
+                          </p><br>
+
+                          <b>Constants Space Complexity : </b><br><br>
+                          <p>
+                            If the space complexity taken by an algorithm is always constant
+                            irrespective of the input then the space complexity is O(1).
+                          </p>
+                          <blockquote class="quote"><b>Example 1 :</b>
+                            <pre>
+                              <code>
+                                public int sum(int num1, int num2) {
+                                  int result = num1 + num2;
+                                  return result;
+                               }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <p>
+                            In the above example you can see that the function creates 
+                            3 variables which are : input variables  num1, num2 and the value
+                            returned. Since the function always has 3 variables irrespective
+                            of the input values the space complexity for the above function
+                            is O(1).
+                          </p><br>
+                          
+                          <b>Nested ForLoop Example :</b><br><br>
+                          <blockquote class="quote"><b>Example 2 :</b>
+                            <pre>
+                              <code>
+                                public void nestedForLoop(int[] arr) {
+                                  for(int i = 0; i < arr.length; i++) {
+                                    for(int j = 0;j < arr.length; j++) {
+                                      int result = arr[i] + arr[j];
+                                      sout(result);
+                                    }
+                                  }
+                                }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <p>
+                            In the above example even though we have a nested for loop
+                            the function only creates one variable(result) at any point
+                            of time.Since this is always constant irrespective of the
+                            input array the space complexity is O(1).
+                          </p><br>
+
+                          <b>Calculating Space Complexity for recursive algorithms :</b><br><br>
+                          <p>
+                            Computing space time complexity for recursive algorithms is tricky. We need to understand how the stack frames are generated in memory
+                            for our recursive algorithm.  
+                          </p>
+
+                          <blockquote class="quote"><b>Example 3 :</b>
+                            <pre>
+                              <code>
+                                public int sum(int n) {
+                                  if (n == 1) {
+                                    return 1;
+                                  }
+                                  return sum(n - 1);
+                                }
+                              </code>
+                            </pre>
+                          </blockquote>
+
+                          <p>
+                            In recursive algorithm the space complexity is the maximum depth of the call stack because at any point of the time.
+In the above example: if 5 is passed as input to the function then the call stack would look like this -> f(5)->f(4)->f(3)->f(2)->f(1)
+Here the space complexity is O(m) where m is 5, the maximum depth of the recursive algorithm in the above example.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Entry content -->
+    
+                  <div class="entry-meta entry-meta-bottom">
+                    <div class="date-author">
+                      <span class="entry-date">
+                        <a href="#" rel="bookmark">
+                          <i class="far fa-clock"></i> <span class="entry-date"> September 13, 2020</span>
+                        </a>
+                      </span>
+                      <span class="author vcard">
+                        <a class="url fn n" href="#" rel="author"> <i class="fas fa-user"></i> LMPixels</a>
+                      </span>
+                    </div>
+      
+                    <!-- Share Buttons -->
+                    <div class="entry-share btn-group share-buttons">
+                      <!--<a href="#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="btn" target="_blank" title="Share on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      
+                      <a href="#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="btn" target="_blank" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                      </a>-->
+
+                      <a href="https://www.linkedin.com/in/swathi-n-5b749b1ba" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                    <!-- /Share Buttons -->
+                  </div>
+
+                  <!--<div class="post-tags">
+                    <div class="tags">
+                      <a href="#" rel="tag">animate</a>
+                      <a href="#" rel="tag">bar</a>
+                      <a href="#" rel="tag">design</a>
+                      <a href="#" rel="tag">progress</a>
+                      <a href="#" rel="tag">ui</a>
+                    </div>
+                  </div>-->
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/animating.js"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script src='js/perfect-scrollbar.min.js'></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
